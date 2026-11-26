@@ -74,9 +74,12 @@ def page_date(url, render=False):
     """Data di pubblicazione letta dalla pagina dell'avviso (per le fonti html, che non la danno)."""
     try:
         body = (browser.get if render else fetch.get)(url).decode("utf-8", "replace")
-    except Exception:
+    except Exception as e:
+        print(f"  data non letta ({type(e).__name__}: {e}): {url}")
         return None
     m = _DATE.search(body)
+    if not m:
+        print(f"  data non trovata nella pagina: {url}")
     return m.group(1) if m else None
 
 
