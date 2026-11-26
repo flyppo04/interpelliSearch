@@ -66,6 +66,19 @@ def parse_html(body, base_url):
 
 PARSERS = {"rss": parse_rss, "html": parse_html}
 
+# date di pubblicazione che WordPress e i siti moderni mettono nella pagina di ogni articolo
+_DATE = re.compile(r'(?:article:published_time"\s+content=|"datePublished"\s*:\s*|<time[^>]+datetime=)"(\d{4}-\d{2}-\d{2})')
+
+
+def page_date(url, render=False):
+    """Data di pubblicazione letta dalla pagina dell'avviso (per le fonti html, che non la danno)."""
+    try:
+        body = (browser.get if render else fetch.get)(url).decode("utf-8", "replace")
+    except Exception:
+        return None
+    m = _DATE.search(body)
+    return m.group(1) if m else None
+
 
 def read(source):
     parser = PARSERS[source["type"]]

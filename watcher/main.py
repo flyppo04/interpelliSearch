@@ -59,10 +59,15 @@ def run():
         items, status = _check(src, prev_status.get(src["name"], {}), now)
         statuses.append(status)
         for it in items:
-            if it["url"] in known:
+            if it["url"] in known and known[it["url"]]["data"]:
                 continue
             labels = filters.classes(f"{it['titolo']} {it['testo']}", rules)
             if not labels:
+                continue
+            if not it["data"]:  # fonti html: la data si legge dalla pagina dell'avviso
+                it["data"] = sources.page_date(it["url"], src.get("render"))
+            if it["url"] in known:  # già in pagina, mancava solo la data
+                known[it["url"]]["data"] = it["data"]
                 continue
             # il titolo originale può contenere nomi (es. il docente da sostituire): non si salva.
             # Sul sito resta solo un titolo neutro + il link all'avviso ufficiale.

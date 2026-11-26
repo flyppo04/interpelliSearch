@@ -41,6 +41,15 @@ class TestHtml(unittest.TestCase):
         self.assertEqual(len(items), 3)  # Home + 2 interpelli: duplicati e link senza testo scartati
 
 
+class TestPageDate(unittest.TestCase):
+    def test_formats(self):
+        find = lambda body: (m := sources._DATE.search(body)) and m.group(1)
+        self.assertEqual(find('<meta property="article:published_time" content="2026-03-09T08:58:39+00:00" />'), "2026-03-09")
+        self.assertEqual(find('{"@type":"Article","datePublished":"2026-11-20T10:00:00"}'), "2026-11-20")
+        self.assertEqual(find('<time class="x" datetime="2026-10-01">1 ottobre</time>'), "2026-10-01")
+        self.assertIsNone(find("<p>nessuna data</p>"))
+
+
 class TestRobots(unittest.TestCase):
     URL = "https://sito.example/pagina"
 

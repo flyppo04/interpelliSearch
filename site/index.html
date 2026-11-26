@@ -55,7 +55,7 @@
   <div class="bar">
     <input type="search" id="q" placeholder="Cerca (classe di concorso, fonte…)" aria-label="Cerca">
     <select id="prov" aria-label="Provincia"><option value="">Tutte le province</option></select>
-    <label class="chk"><input type="checkbox" id="nuovi"> Solo ultime 48 ore</label>
+    <label class="chk"><input type="checkbox" id="nuovi"> Solo pubblicati negli ultimi 2 giorni</label>
   </div>
 
   <ul id="lista"></ul>
@@ -80,7 +80,9 @@
   const fmt = iso => iso ? new Date(iso).toLocaleString("it-IT", { dateStyle: "medium", timeStyle: "short" }) : "";
   const fmtDay = d => d ? new Date(d + "T00:00").toLocaleDateString("it-IT", { dateStyle: "medium" }) : "data n.d.";
   const today = new Date().toLocaleDateString("sv");  // "2026-11-26"
-  const recent = a => Date.now() - new Date(a.visto_il) < 48 * 3600e3;
+  // "nuovo" = pubblicato oggi, ieri o l'altro ieri (la data dell'avviso, non quando il programma l'ha trovato)
+  const twoDaysAgo = new Date(Date.now() - 2 * 864e5).toLocaleDateString("sv");
+  const recent = a => (a.data || a.visto_il.slice(0, 10)) >= twoDaysAgo;
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
   // su GitHub Pages (utente.github.io/repo) il link alle segnalazioni si ricava dall'indirizzo stesso
