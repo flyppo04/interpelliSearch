@@ -1,5 +1,5 @@
 window.INTERPELLI = {
- "aggiornato": "2026-11-26T17:50:02+00:00",
+ "aggiornato": "2026-11-26T20:14:28+00:00",
  "avvisi": [
   {
    "titolo": "Interpello A041",
@@ -96,16 +96,16 @@ window.INTERPELLI = {
   {
    "nome": "USP Lucca",
    "url": "https://ustlucca.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
-   "errore": null,
-   "errori_di_fila": 0,
+   "ultimo_controllo": "2026-11-26T20:14:28+00:00",
+   "errore": "ParseError: mismatched tag: line 93, column 2",
+   "errori_di_fila": 1,
    "trovati": 30,
    "rotta": false
   },
   {
    "nome": "USP Massa Carrara",
    "url": "https://www.ustms.it/category/docenti/interpelli/feed/",
-   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "ultimo_controllo": "2026-11-26T20:14:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -114,7 +114,7 @@ window.INTERPELLI = {
   {
    "nome": "USP Pisa",
    "url": "https://www.usp-pi.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "ultimo_controllo": "2026-11-26T20:14:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -123,7 +123,7 @@ window.INTERPELLI = {
   {
    "nome": "USP Livorno - docenti",
    "url": "https://www.ustli.it/usp_livorno/index.php/docenti/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "ultimo_controllo": "2026-11-26T20:14:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -132,7 +132,7 @@ window.INTERPELLI = {
   {
    "nome": "USP Livorno - ATA",
    "url": "https://www.ustli.it/usp_livorno/index.php/ata/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "ultimo_controllo": "2026-11-26T20:14:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -141,7 +141,7 @@ window.INTERPELLI = {
   {
    "nome": "IC Carrara e Paesi a Monte",
    "url": "https://www.iccarraraepaesiamonte.it/interpelli/",
-   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "ultimo_controllo": "2026-11-26T20:14:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 138,
