@@ -1,0 +1,17 @@
+# Un avviso viene tenuto se il titolo (o la descrizione del feed):
+#   - contiene ALMENO UNA parola di must_any       (lista vuota = nessun vincolo)
+#   - contiene una parola di una delle classi, oppure una parola di other
+#   - NON contiene nessuna parola di exclude_any
+# Maiuscole/minuscole e trattini non contano ("A-041" = "A041"). Basta un pezzo di parola.
+# Sul sito l'avviso compare solo come "Interpello <classe>": il titolo originale non viene salvato.
+
+must_any: ["interpell", "supplenz"]
+
+classes:
+  A041: ["A041", "A41"]                                            # docente
+  B016: ["B016", "B16", "laboratorio di informatica", "laboratori di scienze e tecnologie informatiche"]  # ITP
+  AR02: ["AR02"]                                                   # assistente tecnico ATA
+
+other: ["informatic"]   # parla di informatica ma senza codice: "informatica, classe da verificare"
+
+exclude_any: ["esit", "graduatoria definitiva", "individuat"]   # niente esiti con nomi

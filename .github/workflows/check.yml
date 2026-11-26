@@ -1,0 +1,70 @@
+# Controlla le fonti 4 volte al giorno, salva i dati nella repo e pubblica il sito su GitHub Pages.
+# Impostazione richiesta una volta: Settings -> Pages -> Source: "GitHub Actions".
+name: Controllo interpelli
+
+on:
+  schedule:                           # GitHub ragiona in UTC: due orari, uno per stagione
+    - cron: "40 5,10,15,19 * * *"     # ora legale: 7:40 12:40 17:40 21:40 in Italia
+    - cron: "40 6,11,16,20 * * *"     # ora solare: stessi orari
+  workflow_dispatch:                  # pulsante "Run workflow" nella scheda Actions
+  push:
+    branches: [main]                  # ripubblica il sito quando modifichi il codice
+
+permissions:
+  contents: write                     # salvare site/interpelli.json nella repo
+  pages: write                        # pubblicare il sito
+  id-token: write
+
+concurrency:
+  group: interpelli
+  cancel-in-progress: false
+
+jobs:
+  orario:
+    runs-on: ubuntu-latest
+    outputs:
+      salta: ${{ steps.ora.outputs.salta }}
+    steps:
+      - id: ora
+        name: Tiene solo il cron della stagione giusta
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then exit 0; fi
+          if [ "$(TZ=Europe/Rome date +%z)" = "+0200" ]; then giusto="40 5,10,15,19 * * *"; else giusto="40 6,11,16,20 * * *"; fi
+          if [ "${{ github.event.schedule }}" != "$giusto" ]; then echo "salta=true" >> "$GITHUB_OUTPUT"; fi
+
+  controllo:
+    needs: orario
+    if: needs.orario.outputs.salta != 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.pubblica.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Controlla le fonti
+        run: python -m watcher
+
+      - name: Salva i dati nella repo (la "memoria" per il prossimo controllo)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/interpelli.json site/interpelli.js
+          git diff --cached --quiet || { git commit -m "Aggiorna interpelli" && git push; }
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - id: pubblica
+        uses: actions/deploy-pages@v4

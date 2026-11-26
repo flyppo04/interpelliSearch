@@ -1,0 +1,151 @@
+{
+ "aggiornato": "2026-11-26T17:50:02+00:00",
+ "avvisi": [
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.iccarraraepaesiamonte.it/interpello-a041-iis-meucci/",
+   "data": null,
+   "scadenza": null,
+   "fonte": "IC Carrara e Paesi a Monte",
+   "provincia": "MS",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.iccarraraepaesiamonte.it/interpello-per-individuazione-incarico-a-t-d-fino-al-23-marzo-2026-cdc-a041-18-ore/",
+   "data": null,
+   "scadenza": null,
+   "fonte": "IC Carrara e Paesi a Monte",
+   "provincia": "MS",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.ustms.it/?p=9141",
+   "data": "2026-11-24",
+   "scadenza": null,
+   "fonte": "USP Massa Carrara",
+   "provincia": "MS",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://ustlucca.it/?p=14504",
+   "data": "2026-11-23",
+   "scadenza": null,
+   "fonte": "USP Lucca",
+   "provincia": "LU",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://ustlucca.it/?p=14471",
+   "data": "2026-11-13",
+   "scadenza": null,
+   "fonte": "USP Lucca",
+   "provincia": "LU",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://ustlucca.it/?p=14456",
+   "data": "2026-11-11",
+   "scadenza": null,
+   "fonte": "USP Lucca",
+   "provincia": "LU",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.ustms.it/?p=9100",
+   "data": "2026-11-11",
+   "scadenza": null,
+   "fonte": "USP Massa Carrara",
+   "provincia": "MS",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.usp-pi.it/?p=16609",
+   "data": "2026-11-11",
+   "scadenza": null,
+   "fonte": "USP Pisa",
+   "provincia": "PI",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.ustms.it/?p=9072",
+   "data": "2026-11-03",
+   "scadenza": null,
+   "fonte": "USP Massa Carrara",
+   "provincia": "MS",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.ustli.it/usp_livorno/index.php/docenti/interpelli/3127",
+   "data": "2026-10-19",
+   "scadenza": null,
+   "fonte": "USP Livorno - docenti",
+   "provincia": "LI",
+   "visto_il": "2026-11-26T17:44:04+00:00"
+  }
+ ],
+ "fonti": [
+  {
+   "nome": "USP Lucca",
+   "url": "https://ustlucca.it/category/interpelli/feed/",
+   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 30,
+   "rotta": false
+  },
+  {
+   "nome": "USP Massa Carrara",
+   "url": "https://www.ustms.it/category/docenti/interpelli/feed/",
+   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 30,
+   "rotta": false
+  },
+  {
+   "nome": "USP Pisa",
+   "url": "https://www.usp-pi.it/category/interpelli/feed/",
+   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 30,
+   "rotta": false
+  },
+  {
+   "nome": "USP Livorno - docenti",
+   "url": "https://www.ustli.it/usp_livorno/index.php/docenti/interpelli?format=feed&type=rss",
+   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 10,
+   "rotta": false
+  },
+  {
+   "nome": "USP Livorno - ATA",
+   "url": "https://www.ustli.it/usp_livorno/index.php/ata/interpelli?format=feed&type=rss",
+   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 10,
+   "rotta": false
+  },
+  {
+   "nome": "IC Carrara e Paesi a Monte",
+   "url": "https://www.iccarraraepaesiamonte.it/interpelli/",
+   "ultimo_controllo": "2026-11-26T17:50:02+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 138,
+   "rotta": false
+  }
+ ]
+}

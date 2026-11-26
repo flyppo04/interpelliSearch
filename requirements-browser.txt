@@ -1,0 +1,2 @@
+# Solo se in config/sources.yaml c'è almeno una fonte con render: true
+playwright>=1.45

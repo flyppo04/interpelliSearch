@@ -1,0 +1,43 @@
+# Fonti da controllare.
+#   name:     nome mostrato sulla pagina (deve essere unico)
+#   type:     rss  -> feed RSS. Siti WordPress (USP, scuole con tema "Design Scuole"):
+#                     indirizzo del sito o della categoria + /feed/
+#             html -> pagina qualsiasi: legge tutti i link, i filtri tengono quelli giusti
+#   url:      indirizzo da leggere
+#   province: sigla della provincia
+#   pages:    solo feed WordPress: quante pagine leggere (ognuna ha 10 avvisi). Facoltativo, default 1
+#   render:   true solo se la pagina mostra gli avvisi con JavaScript (facoltativo,
+#             richiede Playwright: vedi README). Di solito si usa con type: html
+
+- name: USP Lucca
+  type: rss
+  url: https://ustlucca.it/category/interpelli/feed/
+  pages: 3
+  province: LU
+
+- name: USP Massa Carrara
+  type: rss
+  url: https://www.ustms.it/category/docenti/interpelli/feed/
+  pages: 3
+  province: MS
+
+- name: USP Pisa
+  type: rss
+  url: https://www.usp-pi.it/category/interpelli/feed/
+  pages: 3
+  province: PI
+
+- name: USP Livorno - docenti
+  type: rss
+  url: https://www.ustli.it/usp_livorno/index.php/docenti/interpelli?format=feed&type=rss
+  province: LI
+
+- name: USP Livorno - ATA
+  type: rss
+  url: https://www.ustli.it/usp_livorno/index.php/ata/interpelli?format=feed&type=rss
+  province: LI
+
+- name: IC Carrara e Paesi a Monte
+  type: html
+  url: https://www.iccarraraepaesiamonte.it/interpelli/
+  province: MS

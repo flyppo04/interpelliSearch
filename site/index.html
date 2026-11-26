@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Interpelli Watch</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #fff; --text: #1c2330; --muted: #5d6675; --line: #e2e5ea;
+    --accent: #1f5fbf; --new: #0e7a4b; --new-bg: #e3f5ec; --bad: #b3261e; --bad-bg: #fbe9e7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12151b; --card: #1b2029; --text: #e6e9ee; --muted: #9aa3b2; --line: #2b313c;
+      --accent: #7fb0ff; --new: #6fd3a2; --new-bg: #173628; --bad: #ff8a80; --bad-bg: #3a1d1b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 16px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { margin: 0; font-size: 1.6rem; }
+  .sub { color: var(--muted); margin: 4px 0 20px; font-size: .9rem; }
+  .bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .bar input[type=search] { flex: 1 1 220px; }
+  input, select { font: inherit; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px;
+                  background: var(--card); color: var(--text); }
+  label.chk { display: flex; align-items: center; gap: 6px; color: var(--muted); }
+  ul { list-style: none; padding: 0; margin: 0; }
+  .avviso { background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+            padding: 12px 14px; margin-bottom: 8px; }
+  .avviso a { color: var(--accent); text-decoration: none; overflow-wrap: anywhere; }
+  .avviso a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: .85rem; margin-top: 4px; }
+  .tag { display: inline-block; font-size: .75rem; font-weight: 700; padding: 1px 7px; border-radius: 99px;
+         margin-right: 6px; color: var(--new); background: var(--new-bg); vertical-align: 2px; }
+  .scad { font-weight: 600; color: var(--text); }
+  .scaduto { text-decoration: line-through; }
+  .empty { color: var(--muted); padding: 24px 0; text-align: center; }
+  h2 { font-size: 1rem; margin: 32px 0 8px; }
+  .fonte { font-size: .85rem; padding: 6px 0; border-bottom: 1px solid var(--line); }
+  .fonte a { color: var(--accent); }
+  .fonte.ko { color: var(--bad); }
+  .fonte .err { display: block; background: var(--bad-bg); padding: 2px 6px; border-radius: 4px; margin-top: 2px; }
+  .note { font-size: .9rem; color: var(--muted); margin: 0; }
+  .note a { color: var(--accent); }
+  footer { color: var(--muted); font-size: .8rem; margin-top: 32px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Interpelli Watch</h1>
+  <p class="sub" id="aggiornato">Nessun dato: lancia <code>python -m watcher</code>.</p>
+
+  <div class="bar">
+    <input type="search" id="q" placeholder="Cerca (classe di concorso, fonte…)" aria-label="Cerca">
+    <select id="prov" aria-label="Provincia"><option value="">Tutte le province</option></select>
+    <label class="chk"><input type="checkbox" id="nuovi"> Solo ultime 48 ore</label>
+  </div>
+
+  <ul id="lista"></ul>
+
+  <h2>Stato delle fonti</h2>
+  <div id="fonti"></div>
+
+  <h2>Segnalazioni e rimozioni</h2>
+  <p class="note">
+    Il sito mostra solo la classe di concorso, la fonte, le date e il link all'avviso ufficiale:
+    nessun titolo originale, nessun nome, nessun documento. Per segnalare un errore, una fonte da aggiungere
+    o chiedere la rimozione di un avviso o di una fonte: <span id="segnala">apri una segnalazione nella pagina del progetto su GitHub.</span>
+  </p>
+
+  <footer>Progetto personale e indipendente, non affiliato al MIM né agli Uffici Scolastici. Fa fede solo l'avviso ufficiale pubblicato dalla scuola o dall'USP.</footer>
+</main>
+
+<script src="interpelli.js"></script>
+<script>
+  const data = window.INTERPELLI || { avvisi: [], fonti: [] };
+  const $ = id => document.getElementById(id);
+  const fmt = iso => iso ? new Date(iso).toLocaleString("it-IT", { dateStyle: "medium", timeStyle: "short" }) : "";
+  const fmtDay = d => d ? new Date(d + "T00:00").toLocaleDateString("it-IT", { dateStyle: "medium" }) : "data n.d.";
+  const today = new Date().toLocaleDateString("sv");  // "2026-11-26"
+  const recent = a => Date.now() - new Date(a.visto_il) < 48 * 3600e3;
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  // su GitHub Pages (utente.github.io/repo) il link alle segnalazioni si ricava dall'indirizzo stesso
+  if (location.hostname.endsWith(".github.io")) {
+    const repo = `https://github.com/${location.hostname.split(".")[0]}/${location.pathname.split("/")[1]}/issues`;
+    $("segnala").innerHTML = `<a href="${esc(repo)}" target="_blank" rel="noopener">apri una segnalazione su GitHub ↗</a>.`;
+  }
+
+  if (data.aggiornato) $("aggiornato").textContent = `Ultimo controllo: ${fmt(data.aggiornato)} · ${data.avvisi.length} avvisi`;
+
+  for (const p of [...new Set(data.avvisi.map(a => a.provincia).filter(Boolean))].sort())
+    $("prov").add(new Option(p, p));
+
+  function render() {
+    const q = $("q").value.trim().toLowerCase(), prov = $("prov").value, soloNuovi = $("nuovi").checked;
+    const list = data.avvisi.filter(a =>
+      (!q || `${a.titolo} ${a.fonte}`.toLowerCase().includes(q)) &&
+      (!prov || a.provincia === prov) &&
+      (!soloNuovi || recent(a)));
+    $("lista").innerHTML = list.length ? list.map(a => `
+      <li class="avviso">
+        ${recent(a) ? '<span class="tag">NUOVO</span>' : ""}<strong>${esc(a.titolo)}</strong>
+        · <a href="${esc(a.url)}" target="_blank" rel="noopener">avviso ufficiale su ${esc(new URL(a.url).hostname.replace(/^www\./, ""))} ↗</a>
+        <div class="meta">${esc(a.fonte)} · ${esc(a.provincia || "")} · pubblicato ${fmtDay(a.data)}${a.scadenza
+          ? ` · <span class="${a.scadenza < today ? "scaduto" : "scad"}">scade ${fmtDay(a.scadenza)}</span>` : ""}</div>
+      </li>`).join("") : '<li class="empty">Nessun avviso con questi filtri.</li>';
+  }
+
+  $("fonti").innerHTML = data.fonti.map(f => `
+    <div class="fonte ${f.rotta ? "ko" : ""}">
+      ${f.rotta ? "✗" : f.errore ? "!" : "✓"} <a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.nome)}</a>
+      — ${f.trovati} elementi letti
+      ${f.errore ? `<span class="err">${esc(f.errore)}</span>` : ""}
+    </div>`).join("") || '<p class="empty">Nessuna fonte controllata.</p>';
+
+  ["q", "prov", "nuovi"].forEach(id => $(id).addEventListener("input", render));
+  render();
+</script>
+</body>
+</html>
