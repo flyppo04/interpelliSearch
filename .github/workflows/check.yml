@@ -42,6 +42,8 @@ jobs:
       url: ${{ steps.pubblica.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main                   # sempre l'ultima versione, anche quando si rilancia un controllo vecchio
 
       - uses: actions/setup-python@v5
         with:
@@ -58,7 +60,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add site/interpelli.json site/interpelli.js
-          git diff --cached --quiet || { git commit -m "Aggiorna interpelli" && git push; }
+          git diff --cached --quiet && exit 0
+          git commit -m "Aggiorna interpelli"
+          # se nel frattempo qualcuno ha caricato altro (tu o un altro controllo): lo prende e tiene i dati appena letti
+          git pull --rebase -X theirs
+          git push
 
       - uses: actions/configure-pages@v5
 
