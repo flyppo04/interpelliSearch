@@ -68,6 +68,6 @@ tests/        test e pagine di esempio
 Progetto personale e indipendente, non affiliato al MIM. Fa fede solo l'avviso ufficiale.
 
 Si salvano e si pubblicano solo classe di concorso, fonte, provincia, date e link all'avviso ufficiale:
-il titolo originale (che può contenere nomi) serve solo per il filtro e non viene salvato.
+il titolo originale non viene salvato.
 
 **Segnalazioni e rimozioni:** apri una *Issue* in questo repository.
