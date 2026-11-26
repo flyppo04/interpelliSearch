@@ -1,24 +1,6 @@
 {
- "aggiornato": "2026-11-26T20:33:49+00:00",
+ "aggiornato": "2026-11-26T20:49:28+00:00",
  "avvisi": [
-  {
-   "titolo": "Interpello A041",
-   "url": "https://www.iccarraraepaesiamonte.it/interpello-a041-iis-meucci/",
-   "data": null,
-   "scadenza": null,
-   "fonte": "IC Carrara e Paesi a Monte",
-   "provincia": "MS",
-   "visto_il": "2026-11-26T17:44:04+00:00"
-  },
-  {
-   "titolo": "Interpello A041",
-   "url": "https://www.iccarraraepaesiamonte.it/interpello-per-individuazione-incarico-a-t-d-fino-al-23-marzo-2026-cdc-a041-18-ore/",
-   "data": null,
-   "scadenza": null,
-   "fonte": "IC Carrara e Paesi a Monte",
-   "provincia": "MS",
-   "visto_il": "2026-11-26T17:44:04+00:00"
-  },
   {
    "titolo": "Interpello A041",
    "url": "https://www.ustms.it/?p=9141",
@@ -96,7 +78,7 @@
   {
    "nome": "USP Lucca",
    "url": "https://ustlucca.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-26T20:33:49+00:00",
+   "ultimo_controllo": "2026-11-26T20:49:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -105,7 +87,7 @@
   {
    "nome": "USP Massa Carrara",
    "url": "https://www.ustms.it/category/docenti/interpelli/feed/",
-   "ultimo_controllo": "2026-11-26T20:33:49+00:00",
+   "ultimo_controllo": "2026-11-26T20:49:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -114,7 +96,7 @@
   {
    "nome": "USP Pisa",
    "url": "https://www.usp-pi.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-26T20:33:49+00:00",
+   "ultimo_controllo": "2026-11-26T20:49:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -123,7 +105,7 @@
   {
    "nome": "USP Livorno - docenti",
    "url": "https://www.ustli.it/usp_livorno/index.php/docenti/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-26T20:33:49+00:00",
+   "ultimo_controllo": "2026-11-26T20:49:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -132,7 +114,7 @@
   {
    "nome": "USP Livorno - ATA",
    "url": "https://www.ustli.it/usp_livorno/index.php/ata/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-26T20:33:49+00:00",
+   "ultimo_controllo": "2026-11-26T20:49:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -141,7 +123,7 @@
   {
    "nome": "IC Carrara e Paesi a Monte",
    "url": "https://www.iccarraraepaesiamonte.it/interpelli/",
-   "ultimo_controllo": "2026-11-26T20:33:49+00:00",
+   "ultimo_controllo": "2026-11-26T20:49:28+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 138,
