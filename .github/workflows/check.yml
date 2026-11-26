@@ -37,15 +37,12 @@ jobs:
     if: needs.orario.outputs.salta != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    environment:
-      name: github-pages
-      url: ${{ steps.pubblica.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: main                   # sempre l'ultima versione, anche quando si rilancia un controllo vecchio
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
           cache: pip
@@ -66,11 +63,20 @@ jobs:
           git pull --rebase -X theirs
           git push
 
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: site
 
+  # pubblicazione in un job a parte (schema ufficiale di GitHub): parte quando il pacchetto del sito
+  # è già registrato, invece di cercarlo un istante dopo averlo caricato
+  pubblica:
+    needs: controllo
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pubblica.outputs.page_url }}
+    steps:
       - id: pubblica
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
