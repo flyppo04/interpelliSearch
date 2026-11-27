@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-27T03:16:01+00:00",
+ "aggiornato": "2026-11-27T16:58:00+00:00",
  "avvisi": [
   {
    "titolo": "Interpello A041",
@@ -78,7 +78,7 @@
   {
    "nome": "USP Lucca",
    "url": "https://ustlucca.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-27T03:16:01+00:00",
+   "ultimo_controllo": "2026-11-27T16:58:00+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -87,7 +87,7 @@
   {
    "nome": "USP Massa Carrara",
    "url": "https://www.ustms.it/category/docenti/interpelli/feed/",
-   "ultimo_controllo": "2026-11-27T03:16:01+00:00",
+   "ultimo_controllo": "2026-11-27T16:58:00+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -96,7 +96,7 @@
   {
    "nome": "USP Pisa",
    "url": "https://www.usp-pi.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-27T03:16:01+00:00",
+   "ultimo_controllo": "2026-11-27T16:58:00+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -105,7 +105,7 @@
   {
    "nome": "USP Livorno - docenti",
    "url": "https://www.ustli.it/usp_livorno/index.php/docenti/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-27T03:16:01+00:00",
+   "ultimo_controllo": "2026-11-27T16:58:00+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -114,7 +114,7 @@
   {
    "nome": "USP Livorno - ATA",
    "url": "https://www.ustli.it/usp_livorno/index.php/ata/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-27T03:16:01+00:00",
+   "ultimo_controllo": "2026-11-27T16:58:00+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -123,7 +123,7 @@
   {
    "nome": "IC Carrara e Paesi a Monte",
    "url": "https://www.iccarraraepaesiamonte.it/interpelli/",
-   "ultimo_controllo": "2026-11-27T03:16:01+00:00",
+   "ultimo_controllo": "2026-11-27T16:58:00+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 138,
