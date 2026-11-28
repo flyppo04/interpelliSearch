@@ -1,8 +1,11 @@
 # InterpelliSearch
 🔗 **Sito online:** https://flyppo04.github.io/interpelliSearch/
 
-Controlla i siti degli USP e delle scuole e raccoglie gli **interpelli per supplenze** pertinenti
-(per ora classe A041) in una pagina web consultabile.
+Controlla i siti degli USP, delle scuole e i loro albi online e raccoglie gli **interpelli per supplenze**
+pertinenti (A041, B016, AR02, informatica) in una pagina web consultabile.
+
+Province: Lucca, Massa Carrara, Pisa, Livorno, Firenze, Prato, Pistoia, Siena, Grosseto, La Spezia.
+Elenco completo delle fonti in `config/sources.yaml`.
 
 ## Avvio (Windows)
 

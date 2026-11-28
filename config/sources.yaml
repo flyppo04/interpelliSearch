@@ -37,6 +37,45 @@
   url: https://www.ustli.it/usp_livorno/index.php/ata/interpelli?format=feed&type=rss
   province: LI
 
+- name: USP Firenze - docenti
+  type: rss
+  url: https://www.ust.fi.it/mese/interpelli/feed/
+  pages: 3
+  province: FI
+
+- name: USP Firenze - ATA
+  type: rss
+  url: https://www.ust.fi.it/mese/interpelli-ata/feed/
+  province: FI
+
+- name: USP Pistoia
+  type: rss
+  url: https://www.ufficioscolasticoprovinciale.pistoia.it/feed/   # la categoria interpelli ha il feed vuoto: si usa quello generale
+  pages: 3
+  province: PT
+
+- name: USP Prato
+  type: rss
+  url: https://www.ufficioscolasticoprovinciale.prato.it/feed/   # feed generale, come Pistoia
+  pages: 3
+  province: PO
+
+- name: USP Siena - docenti
+  type: rss
+  url: https://www.uspsi.it/uspsiena/interpelli-docenti/feed/
+  pages: 3
+  province: SI
+
+- name: USP Siena - ATA
+  type: rss
+  url: https://www.uspsi.it/uspsiena/interpelli-ata/feed/
+  province: SI
+
+- name: USP Grosseto
+  type: rss
+  url: https://www.ufficioscolasticogrosseto.it/uff7/index.php/pubblicazioni?format=feed&type=rss
+  province: GR
+
 - name: IC Carrara e Paesi a Monte
   type: html
   url: https://www.iccarraraepaesiamonte.it/interpelli/
@@ -77,3 +116,20 @@
 - {name: "Albo Liceo Fermi (Cecina)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS16712", province: LI}
 - {name: "Albo ITIS Galilei (Livorno)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG18323", province: LI}
 - {name: "Albo ISIS Mattei (Rosignano)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG18325", province: LI}
+
+# Scuole superiori della provincia della Spezia: l'Ambito territoriale (istruzioneliguria.it) non ha
+# una sezione interpelli, li pubblicano le scuole. Sito (feed generale) + albo Argo (vedi nota sopra).
+# Esclusi: Liceo Costa (robots.txt vieta tutto il sito); albo Fossati-Da Passano (Spaggiari, da verificare).
+- {name: "IIS Cardarelli (La Spezia)", type: rss, url: "https://www.istitutocardarelli.edu.it/feed/", pages: 2, province: SP}
+- {name: "Liceo Mazzini (La Spezia)", type: rss, url: "https://www.liceomazzini.edu.it/feed/", pages: 2, province: SP}
+- {name: "IIS Einaudi-Chiodo (La Spezia)", type: rss, url: "https://www.einaudichiodo.edu.it/feed/", pages: 2, province: SP}
+- {name: "IIS Parentucelli-Arzelà (Sarzana)", type: rss, url: "https://www.parentucelli-arzela.edu.it/feed/", pages: 2, province: SP}
+- {name: "IIS Capellini-Sauro (La Spezia)", type: rss, url: "https://www.capellinisauro.edu.it/feed/", pages: 2, province: SP}
+- {name: "Liceo Pacinotti (La Spezia)", type: rss, url: "https://www.liceopacinotti.edu.it/feed/", pages: 2, province: SP}
+- {name: "ITE Fossati-Da Passano (La Spezia)", type: rss, url: "https://www.fossatidapassano.it/feed/", pages: 2, province: SP}
+- {name: "Albo IIS Cardarelli (La Spezia)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG18493", province: SP}
+- {name: "Albo Liceo Mazzini (La Spezia)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS17120", province: SP}
+- {name: "Albo IIS Einaudi-Chiodo (La Spezia)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG26033", province: SP}
+- {name: "Albo IIS Parentucelli-Arzelà (Sarzana)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG27950", province: SP}
+- {name: "Albo IIS Capellini-Sauro (La Spezia)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG26013", province: SP}
+- {name: "Albo Liceo Pacinotti (La Spezia)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS16503", province: SP}
