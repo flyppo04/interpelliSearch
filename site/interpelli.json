@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-28T12:48:58+00:00",
+ "aggiornato": "2026-11-28T13:24:57+00:00",
  "avvisi": [
   {
    "titolo": "Interpello A041",
@@ -18,6 +18,33 @@
    "fonte": "USP Lucca",
    "provincia": "LU",
    "visto_il": "2026-11-26T17:44:04+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.ust.fi.it/?p=9319",
+   "data": "2026-11-23",
+   "scadenza": null,
+   "fonte": "USP Firenze - docenti",
+   "provincia": "FI",
+   "visto_il": "2026-11-28T13:24:57+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.ust.fi.it/?p=9305",
+   "data": "2026-11-23",
+   "scadenza": null,
+   "fonte": "USP Firenze - docenti",
+   "provincia": "FI",
+   "visto_il": "2026-11-28T13:24:57+00:00"
+  },
+  {
+   "titolo": "Interpello A041",
+   "url": "https://www.uspsi.it/?p=13740",
+   "data": "2026-11-19",
+   "scadenza": null,
+   "fonte": "USP Siena - docenti",
+   "provincia": "SI",
+   "visto_il": "2026-11-28T13:24:57+00:00"
   },
   {
    "titolo": "Interpello A041",
@@ -87,7 +114,7 @@
   {
    "nome": "USP Lucca",
    "url": "https://ustlucca.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -96,7 +123,7 @@
   {
    "nome": "USP Massa Carrara",
    "url": "https://www.ustms.it/category/docenti/interpelli/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -105,7 +132,7 @@
   {
    "nome": "USP Pisa",
    "url": "https://www.usp-pi.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -114,7 +141,7 @@
   {
    "nome": "USP Livorno - docenti",
    "url": "https://www.ustli.it/usp_livorno/index.php/docenti/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -123,16 +150,79 @@
   {
    "nome": "USP Livorno - ATA",
    "url": "https://www.ustli.it/usp_livorno/index.php/ata/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
    "rotta": false
   },
   {
+   "nome": "USP Firenze - docenti",
+   "url": "https://www.ust.fi.it/mese/interpelli/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 30,
+   "rotta": false
+  },
+  {
+   "nome": "USP Firenze - ATA",
+   "url": "https://www.ust.fi.it/mese/interpelli-ata/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 10,
+   "rotta": false
+  },
+  {
+   "nome": "USP Pistoia",
+   "url": "https://www.ufficioscolasticoprovinciale.pistoia.it/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 30,
+   "rotta": false
+  },
+  {
+   "nome": "USP Prato",
+   "url": "https://www.ufficioscolasticoprovinciale.prato.it/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 30,
+   "rotta": false
+  },
+  {
+   "nome": "USP Siena - docenti",
+   "url": "https://www.uspsi.it/uspsiena/interpelli-docenti/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 24,
+   "rotta": false
+  },
+  {
+   "nome": "USP Siena - ATA",
+   "url": "https://www.uspsi.it/uspsiena/interpelli-ata/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 8,
+   "rotta": false
+  },
+  {
+   "nome": "USP Grosseto",
+   "url": "https://www.ufficioscolasticogrosseto.it/uff7/index.php/pubblicazioni?format=feed&type=rss",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 9,
+   "rotta": false
+  },
+  {
    "nome": "IC Carrara e Paesi a Monte",
    "url": "https://www.iccarraraepaesiamonte.it/interpelli/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 138,
@@ -141,7 +231,7 @@
   {
    "nome": "IIS Marco Polo - Cattaneo (Cecina)",
    "url": "https://www.polocattaneo.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -150,7 +240,7 @@
   {
    "nome": "IIS Buontalenti-Cappellini-Orlando (Livorno)",
    "url": "https://www.buontalenticappelliniorlando.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -159,7 +249,7 @@
   {
    "nome": "ISIS Val di Cornia (Piombino)",
    "url": "https://www.isisvaldicornia.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -168,7 +258,7 @@
   {
    "nome": "IS Niccolini-Palli (Livorno)",
    "url": "https://www.liceoniccolinipalli.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -177,7 +267,7 @@
   {
    "nome": "IIS Vespucci-Colombo (Livorno)",
    "url": "https://www.vespuccicolombo.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -186,7 +276,7 @@
   {
    "nome": "IIS Carducci-Volta-Pacinotti (Piombino)",
    "url": "https://carduccivoltapacinotti.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 19,
@@ -195,7 +285,7 @@
   {
    "nome": "Liceo Enriques (Livorno)",
    "url": "https://www.liceoenriques.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -204,7 +294,7 @@
   {
    "nome": "ISIS Foresi (Portoferraio)",
    "url": "https://www.isisforesi.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -213,7 +303,7 @@
   {
    "nome": "ITCG Cerboni (Portoferraio)",
    "url": "https://www.itcgcerboni.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -222,7 +312,7 @@
   {
    "nome": "Liceo Fermi (Cecina)",
    "url": "https://www.fermicecina.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -231,7 +321,7 @@
   {
    "nome": "ITIS Galilei (Livorno)",
    "url": "https://www.itisgalileilivorno.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -240,7 +330,7 @@
   {
    "nome": "ISIS Mattei (Rosignano)",
    "url": "https://www.isismattei.edu.it/feed/",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 20,
@@ -249,7 +339,7 @@
   {
    "nome": "Albo IIS Marco Polo - Cattaneo (Cecina)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG21052",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 26,
@@ -258,7 +348,7 @@
   {
    "nome": "Albo IIS Buontalenti-Cappellini-Orlando (Livorno)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG26696",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 3,
@@ -267,7 +357,7 @@
   {
    "nome": "Albo ISIS Val di Cornia (Piombino)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG17817",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 13,
@@ -276,7 +366,7 @@
   {
    "nome": "Albo IS Niccolini-Palli (Livorno)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG20715",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 18,
@@ -285,7 +375,7 @@
   {
    "nome": "Albo IIS Vespucci-Colombo (Livorno)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG26699",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 0,
@@ -294,7 +384,7 @@
   {
    "nome": "Albo IIS Carducci-Volta-Pacinotti (Piombino)",
    "url": "https://nuvola.madisoft.it/feed/LIIS01100C/rss/1",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 54,
@@ -303,7 +393,7 @@
   {
    "nome": "Albo Liceo Enriques (Livorno)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS16711",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 6,
@@ -312,7 +402,7 @@
   {
    "nome": "Albo ISIS Foresi (Portoferraio)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS16132",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 13,
@@ -321,7 +411,7 @@
   {
    "nome": "Albo ITCG Cerboni (Portoferraio)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG17814",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 13,
@@ -330,7 +420,7 @@
   {
    "nome": "Albo Liceo Fermi (Cecina)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS16712",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 19,
@@ -339,7 +429,7 @@
   {
    "nome": "Albo ITIS Galilei (Livorno)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG18323",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 35,
@@ -348,10 +438,127 @@
   {
    "nome": "Albo ISIS Mattei (Rosignano)",
    "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG18325",
-   "ultimo_controllo": "2026-11-28T12:48:58+00:00",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 167,
+   "rotta": false
+  },
+  {
+   "nome": "IIS Cardarelli (La Spezia)",
+   "url": "https://www.istitutocardarelli.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "Liceo Mazzini (La Spezia)",
+   "url": "https://www.liceomazzini.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "IIS Einaudi-Chiodo (La Spezia)",
+   "url": "https://www.einaudichiodo.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "IIS Parentucelli-Arzelà (Sarzana)",
+   "url": "https://www.parentucelli-arzela.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "IIS Capellini-Sauro (La Spezia)",
+   "url": "https://www.capellinisauro.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "Liceo Pacinotti (La Spezia)",
+   "url": "https://www.liceopacinotti.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "ITE Fossati-Da Passano (La Spezia)",
+   "url": "https://www.fossatidapassano.it/feed/",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 19,
+   "rotta": false
+  },
+  {
+   "nome": "Albo IIS Cardarelli (La Spezia)",
+   "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG18493",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 1,
+   "rotta": false
+  },
+  {
+   "nome": "Albo Liceo Mazzini (La Spezia)",
+   "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS17120",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 21,
+   "rotta": false
+  },
+  {
+   "nome": "Albo IIS Einaudi-Chiodo (La Spezia)",
+   "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG26033",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 16,
+   "rotta": false
+  },
+  {
+   "nome": "Albo IIS Parentucelli-Arzelà (Sarzana)",
+   "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG27950",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 24,
+   "rotta": false
+  },
+  {
+   "nome": "Albo IIS Capellini-Sauro (La Spezia)",
+   "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG26013",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 22,
+   "rotta": false
+  },
+  {
+   "nome": "Albo Liceo Pacinotti (La Spezia)",
+   "url": "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS16503",
+   "ultimo_controllo": "2026-11-28T13:24:57+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 14,
    "rotta": false
   }
  ]
