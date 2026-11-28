@@ -1,5 +1,5 @@
 window.INTERPELLI = {
- "aggiornato": "2026-11-28T02:56:51+00:00",
+ "aggiornato": "2026-11-28T12:24:44+00:00",
  "avvisi": [
   {
    "titolo": "Interpello A041",
@@ -78,7 +78,7 @@ window.INTERPELLI = {
   {
    "nome": "USP Lucca",
    "url": "https://ustlucca.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-28T02:56:51+00:00",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -87,7 +87,7 @@ window.INTERPELLI = {
   {
    "nome": "USP Massa Carrara",
    "url": "https://www.ustms.it/category/docenti/interpelli/feed/",
-   "ultimo_controllo": "2026-11-28T02:56:51+00:00",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -96,7 +96,7 @@ window.INTERPELLI = {
   {
    "nome": "USP Pisa",
    "url": "https://www.usp-pi.it/category/interpelli/feed/",
-   "ultimo_controllo": "2026-11-28T02:56:51+00:00",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 30,
@@ -105,7 +105,7 @@ window.INTERPELLI = {
   {
    "nome": "USP Livorno - docenti",
    "url": "https://www.ustli.it/usp_livorno/index.php/docenti/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-28T02:56:51+00:00",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -114,7 +114,7 @@ window.INTERPELLI = {
   {
    "nome": "USP Livorno - ATA",
    "url": "https://www.ustli.it/usp_livorno/index.php/ata/interpelli?format=feed&type=rss",
-   "ultimo_controllo": "2026-11-28T02:56:51+00:00",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 10,
@@ -123,10 +123,118 @@ window.INTERPELLI = {
   {
    "nome": "IC Carrara e Paesi a Monte",
    "url": "https://www.iccarraraepaesiamonte.it/interpelli/",
-   "ultimo_controllo": "2026-11-28T02:56:51+00:00",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
    "errore": null,
    "errori_di_fila": 0,
    "trovati": 138,
+   "rotta": false
+  },
+  {
+   "nome": "IIS Marco Polo - Cattaneo (Cecina)",
+   "url": "https://www.polocattaneo.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "IIS Buontalenti-Cappellini-Orlando (Livorno)",
+   "url": "https://www.buontalenticappelliniorlando.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "ISIS Val di Cornia (Piombino)",
+   "url": "https://www.isisvaldicornia.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "IS Niccolini-Palli (Livorno)",
+   "url": "https://www.liceoniccolinipalli.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "IIS Vespucci-Colombo (Livorno)",
+   "url": "https://www.vespuccicolombo.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "IIS Carducci-Volta-Pacinotti (Piombino)",
+   "url": "https://carduccivoltapacinotti.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 19,
+   "rotta": false
+  },
+  {
+   "nome": "Liceo Enriques (Livorno)",
+   "url": "https://www.liceoenriques.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 10,
+   "rotta": false
+  },
+  {
+   "nome": "ISIS Foresi (Portoferraio)",
+   "url": "https://www.isisforesi.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "ITCG Cerboni (Portoferraio)",
+   "url": "https://www.itcgcerboni.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "Liceo Fermi (Cecina)",
+   "url": "https://www.fermicecina.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "ITIS Galilei (Livorno)",
+   "url": "https://www.itisgalileilivorno.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
+   "rotta": false
+  },
+  {
+   "nome": "ISIS Mattei (Rosignano)",
+   "url": "https://www.isismattei.edu.it/feed/",
+   "ultimo_controllo": "2026-11-28T12:24:44+00:00",
+   "errore": null,
+   "errori_di_fila": 0,
+   "trovati": 20,
    "rotta": false
   }
  ]
