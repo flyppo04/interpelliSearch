@@ -53,6 +53,7 @@ def run():
     known = {a["url"]: a for a in previous["avvisi"]}
     prev_status = {f["nome"]: f for f in previous["fonti"]}
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    cutoff = (date.today() - timedelta(days=KEEP_DAYS)).isoformat()
 
     new, statuses = [], []
     for src in _yaml("sources.yaml"):
@@ -69,6 +70,8 @@ def run():
             if it["url"] in known:  # già in pagina, mancava solo la data
                 known[it["url"]]["data"] = it["data"]
                 continue
+            if it["data"] and it["data"] < cutoff:  # avviso vecchio: non è una novità
+                continue
             # il titolo originale può contenere nomi (es. il docente da sostituire): non si salva.
             # Sul sito resta solo un titolo neutro + il link all'avviso ufficiale.
             avviso = {"titolo": "Interpello " + ", ".join(labels), "url": it["url"],
@@ -77,7 +80,6 @@ def run():
             known[it["url"]] = avviso
             new.append(avviso)
 
-    cutoff = (date.today() - timedelta(days=KEEP_DAYS)).isoformat()
     avvisi = [a for a in known.values() if (a["data"] or a["visto_il"][:10]) >= cutoff]
     avvisi.sort(key=lambda a: a["data"] or a["visto_il"][:10], reverse=True)
     _save({"aggiornato": now, "avvisi": avvisi, "fonti": statuses})

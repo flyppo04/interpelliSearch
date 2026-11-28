@@ -41,3 +41,19 @@
   type: html
   url: https://www.iccarraraepaesiamonte.it/interpelli/
   province: MS
+
+# Scuole superiori della provincia di Livorno: dal 22/10/2026 l'USP pubblica gli interpelli
+# solo su piattaformaines.it, che vieta i programmi in robots.txt. Feed generale degli articoli.
+# Escluso: Liceo Cecioni (robots.txt vieta tutto il sito).
+- {name: "IIS Marco Polo - Cattaneo (Cecina)", type: rss, url: "https://www.polocattaneo.edu.it/feed/", pages: 2, province: LI}
+- {name: "IIS Buontalenti-Cappellini-Orlando (Livorno)", type: rss, url: "https://www.buontalenticappelliniorlando.it/feed/", pages: 2, province: LI}
+- {name: "ISIS Val di Cornia (Piombino)", type: rss, url: "https://www.isisvaldicornia.edu.it/feed/", pages: 2, province: LI}
+- {name: "IS Niccolini-Palli (Livorno)", type: rss, url: "https://www.liceoniccolinipalli.edu.it/feed/", pages: 2, province: LI}
+- {name: "IIS Vespucci-Colombo (Livorno)", type: rss, url: "https://www.vespuccicolombo.edu.it/feed/", pages: 2, province: LI}
+- {name: "IIS Carducci-Volta-Pacinotti (Piombino)", type: rss, url: "https://carduccivoltapacinotti.edu.it/feed/", pages: 2, province: LI}
+- {name: "Liceo Enriques (Livorno)", type: rss, url: "https://www.liceoenriques.edu.it/feed/", pages: 2, province: LI}
+- {name: "ISIS Foresi (Portoferraio)", type: rss, url: "https://www.isisforesi.edu.it/feed/", pages: 2, province: LI}
+- {name: "ITCG Cerboni (Portoferraio)", type: rss, url: "https://www.itcgcerboni.it/feed/", pages: 2, province: LI}
+- {name: "Liceo Fermi (Cecina)", type: rss, url: "https://www.fermicecina.edu.it/feed/", pages: 2, province: LI}
+- {name: "ITIS Galilei (Livorno)", type: rss, url: "https://www.itisgalileilivorno.edu.it/feed/", pages: 2, province: LI}
+- {name: "ISIS Mattei (Rosignano)", type: rss, url: "https://www.isismattei.edu.it/feed/", pages: 2, province: LI}
