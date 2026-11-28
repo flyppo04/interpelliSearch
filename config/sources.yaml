@@ -57,3 +57,23 @@
 - {name: "Liceo Fermi (Cecina)", type: rss, url: "https://www.fermicecina.edu.it/feed/", pages: 2, province: LI}
 - {name: "ITIS Galilei (Livorno)", type: rss, url: "https://www.itisgalileilivorno.edu.it/feed/", pages: 2, province: LI}
 - {name: "ISIS Mattei (Rosignano)", type: rss, url: "https://www.isismattei.edu.it/feed/", pages: 2, province: LI}
+
+# Albi online delle stesse scuole: alcune pubblicano gli interpelli solo qui (es. ITIS Galilei).
+# Argo: feed RSS pubblico, linkato nel piè di pagina di ogni albo.
+#   robots.txt verificato il 28/11/2026: generale.portaleargo.it risponde 503 a qualsiasi indirizzo
+#   inesistente (bilanciatore AWS), quindi il file non esiste; nessuna copia storica in Wayback
+#   Machine né in Common Crawl. Usato come "robots.txt assente" (RFC 9309 2.3.1.3).
+#   Gli atti dell'albo sono pubblici per legge (art. 32 L. 69/2009); si salva solo classe + link.
+# Nuvola (Madisoft): robots.txt consente tutto (crawl-delay 4 s; qui 1 richiesta per controllo).
+- {name: "Albo IIS Marco Polo - Cattaneo (Cecina)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG21052", province: LI}
+- {name: "Albo IIS Buontalenti-Cappellini-Orlando (Livorno)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG26696", province: LI}
+- {name: "Albo ISIS Val di Cornia (Piombino)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG17817", province: LI}
+- {name: "Albo IS Niccolini-Palli (Livorno)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG20715", province: LI}
+- {name: "Albo IIS Vespucci-Colombo (Livorno)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG26699", province: LI}
+- {name: "Albo IIS Carducci-Volta-Pacinotti (Piombino)", type: rss, url: "https://nuvola.madisoft.it/feed/LIIS01100C/rss/1", province: LI}
+- {name: "Albo Liceo Enriques (Livorno)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS16711", province: LI}
+- {name: "Albo ISIS Foresi (Portoferraio)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS16132", province: LI}
+- {name: "Albo ITCG Cerboni (Portoferraio)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG17814", province: LI}
+- {name: "Albo Liceo Fermi (Cecina)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SS16712", province: LI}
+- {name: "Albo ITIS Galilei (Livorno)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG18323", province: LI}
+- {name: "Albo ISIS Mattei (Rosignano)", type: rss, url: "https://generale.portaleargo.it/albopretorio/api/public/atti/rss/SG18325", province: LI}
